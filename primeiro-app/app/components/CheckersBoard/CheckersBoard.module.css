@@ -1,0 +1,50 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 600px;
+    max-height: 600px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s ease;
+}
+
+.dark {
+    background-color: #000000;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+.square:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.piece {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.black {
+    background: #00ff00; /* Verde neon */
+    background: linear-gradient(145deg, #00ff00, #00cc00); /* Gradiente de verde neon */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; /* Efeito de brilho neon */
+}
+
+.white {
+    background: #00bfff; /* Azul neon */
+    background: linear-gradient(145deg, #00bfff, #0077ff); /* Gradiente de azul neon */
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff; /* Efeito de brilho neon */
+}
